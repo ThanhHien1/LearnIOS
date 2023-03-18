@@ -7,13 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		24163E2329C0442200CF4C49 /* Student+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24163E2229C0442200CF4C49 /* Student+CoreDataProperties.swift */; };
-		24163E2529C0447B00CF4C49 /* Student+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24163E2429C0447B00CF4C49 /* Student+CoreDataClass.swift */; };
+		242D235229C1FDF200C39805 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242D235129C1FDF200C39805 /* LoginViewController.swift */; };
+		242D235729C208B500C39805 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242D235629C208B500C39805 /* Keys.swift */; };
+		24689AE029C5615200672719 /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24689ADF29C5615200672719 /* DetailController.swift */; };
+		24689AEC29C5632C00672719 /* LearnCodeData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2481568829BF529000022CF9 /* LearnCodeData.xcdatamodeld */; };
+		24689AF429C5643400672719 /* Student+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24689AF329C5643400672719 /* Student+CoreDataProperties.swift */; };
+		24714BAE29C5660900386A6F /* Student+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24714BAD29C5660900386A6F /* Student+CoreDataClass.swift */; };
+		24714BAF29C5675E00386A6F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242D235429C204D500C39805 /* User.swift */; };
+		24714BB129C5699600386A6F /* StudentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24714BB029C5699600386A6F /* StudentCell.swift */; };
 		2481568029BF529000022CF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2481567F29BF529000022CF9 /* AppDelegate.swift */; };
 		2481568229BF529000022CF9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2481568129BF529000022CF9 /* SceneDelegate.swift */; };
-		2481568429BF529000022CF9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2481568329BF529000022CF9 /* ViewController.swift */; };
+		2481568429BF529000022CF9 /* StudentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2481568329BF529000022CF9 /* StudentController.swift */; };
 		2481568729BF529000022CF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2481568529BF529000022CF9 /* Main.storyboard */; };
-		2481568A29BF529000022CF9 /* LearnCodeData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2481568829BF529000022CF9 /* LearnCodeData.xcdatamodeld */; };
 		2481568C29BF529000022CF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2481568B29BF529000022CF9 /* Assets.xcassets */; };
 		2481568F29BF529000022CF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2481568D29BF529000022CF9 /* LaunchScreen.storyboard */; };
 		2481569929BF5C5000022CF9 /* AddStudentCV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2481569829BF5C5000022CF9 /* AddStudentCV.swift */; };
@@ -22,12 +27,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		24163E2229C0442200CF4C49 /* Student+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Student+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
-		24163E2429C0447B00CF4C49 /* Student+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Student+CoreDataClass.swift"; sourceTree = "<group>"; };
+		242D235129C1FDF200C39805 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		242D235429C204D500C39805 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		242D235629C208B500C39805 /* Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
+		24689ADF29C5615200672719 /* DetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
+		24689AF329C5643400672719 /* Student+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Student+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		24714BAD29C5660900386A6F /* Student+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Student+CoreDataClass.swift"; sourceTree = "<group>"; };
+		24714BB029C5699600386A6F /* StudentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentCell.swift; sourceTree = "<group>"; };
 		2481567C29BF529000022CF9 /* LearnCodeData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnCodeData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2481567F29BF529000022CF9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2481568129BF529000022CF9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2481568329BF529000022CF9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2481568329BF529000022CF9 /* StudentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentController.swift; sourceTree = "<group>"; };
 		2481568629BF529000022CF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2481568929BF529000022CF9 /* LearnCodeData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LearnCodeData.xcdatamodel; sourceTree = "<group>"; };
 		2481568B29BF529000022CF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -61,6 +71,97 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		242D235029C1FDD900C39805 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				242D235129C1FDF200C39805 /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		242D235329C204C700C39805 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				242D235429C204D500C39805 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		24689AD829C5584700672719 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				24689AF329C5643400672719 /* Student+CoreDataProperties.swift */,
+				2481568829BF529000022CF9 /* LearnCodeData.xcdatamodeld */,
+				24714BAD29C5660900386A6F /* Student+CoreDataClass.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		24689AD929C5586D00672719 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				2481567F29BF529000022CF9 /* AppDelegate.swift */,
+				2481568129BF529000022CF9 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		24689ADA29C558C700672719 /* Student */ = {
+			isa = PBXGroup;
+			children = (
+				2481568329BF529000022CF9 /* StudentController.swift */,
+				24714BB029C5699600386A6F /* StudentCell.swift */,
+			);
+			path = Student;
+			sourceTree = "<group>";
+		};
+		24689ADB29C558E800672719 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				2481568529BF529000022CF9 /* Main.storyboard */,
+				2481568D29BF529000022CF9 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		24689ADC29C5590A00672719 /* AddStudent */ = {
+			isa = PBXGroup;
+			children = (
+				2481569829BF5C5000022CF9 /* AddStudentCV.swift */,
+			);
+			path = AddStudent;
+			sourceTree = "<group>";
+		};
+		24689ADD29C5591C00672719 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				24689AD829C5584700672719 /* CoreData */,
+				248156A029BF637900022CF9 /* DBManager.swift */,
+				242D235629C208B500C39805 /* Keys.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		24689ADE29C5592A00672719 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				24689AE129C5615800672719 /* Detail */,
+				24689ADB29C558E800672719 /* Storyboard */,
+				24689ADC29C5590A00672719 /* AddStudent */,
+				24689ADA29C558C700672719 /* Student */,
+				242D235029C1FDD900C39805 /* Login */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		24689AE129C5615800672719 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				24689ADF29C5615200672719 /* DetailController.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
 		2481567329BF529000022CF9 = {
 			isa = PBXGroup;
 			children = (
@@ -82,18 +183,12 @@
 		2481567E29BF529000022CF9 /* LearnCodeData */ = {
 			isa = PBXGroup;
 			children = (
-				24163E2429C0447B00CF4C49 /* Student+CoreDataClass.swift */,
-				24163E2229C0442200CF4C49 /* Student+CoreDataProperties.swift */,
-				2481567F29BF529000022CF9 /* AppDelegate.swift */,
-				2481568129BF529000022CF9 /* SceneDelegate.swift */,
-				2481568329BF529000022CF9 /* ViewController.swift */,
-				2481568529BF529000022CF9 /* Main.storyboard */,
+				24689ADE29C5592A00672719 /* UI */,
+				24689ADD29C5591C00672719 /* Data */,
+				24689AD929C5586D00672719 /* Application */,
+				242D235329C204C700C39805 /* Models */,
 				2481568B29BF529000022CF9 /* Assets.xcassets */,
-				2481568D29BF529000022CF9 /* LaunchScreen.storyboard */,
 				2481569029BF529000022CF9 /* Info.plist */,
-				2481568829BF529000022CF9 /* LearnCodeData.xcdatamodeld */,
-				2481569829BF5C5000022CF9 /* AddStudentCV.swift */,
-				248156A029BF637900022CF9 /* DBManager.swift */,
 			);
 			path = LearnCodeData;
 			sourceTree = "<group>";
@@ -203,14 +298,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2481568429BF529000022CF9 /* ViewController.swift in Sources */,
-				24163E2529C0447B00CF4C49 /* Student+CoreDataClass.swift in Sources */,
-				2481568A29BF529000022CF9 /* LearnCodeData.xcdatamodeld in Sources */,
+				24714BAF29C5675E00386A6F /* User.swift in Sources */,
+				24689AEC29C5632C00672719 /* LearnCodeData.xcdatamodeld in Sources */,
+				242D235229C1FDF200C39805 /* LoginViewController.swift in Sources */,
+				2481568429BF529000022CF9 /* StudentController.swift in Sources */,
+				24689AE029C5615200672719 /* DetailController.swift in Sources */,
+				24689AF429C5643400672719 /* Student+CoreDataProperties.swift in Sources */,
+				24714BB129C5699600386A6F /* StudentCell.swift in Sources */,
+				242D235729C208B500C39805 /* Keys.swift in Sources */,
 				248156A129BF637900022CF9 /* DBManager.swift in Sources */,
+				24714BAE29C5660900386A6F /* Student+CoreDataClass.swift in Sources */,
 				2481568029BF529000022CF9 /* AppDelegate.swift in Sources */,
 				2481568229BF529000022CF9 /* SceneDelegate.swift in Sources */,
 				2481569929BF5C5000022CF9 /* AddStudentCV.swift in Sources */,
-				24163E2329C0442200CF4C49 /* Student+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
