@@ -14,7 +14,6 @@ protocol StudentCellDelegate{
 
 class StudentCell: UITableViewCell{
     var delegate: StudentCellDelegate? = nil
-    
     var student: Student? = nil
     
     @IBOutlet weak var school: UILabel!

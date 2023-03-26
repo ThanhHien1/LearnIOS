@@ -11,9 +11,9 @@ import CoreData
 class StudentController: UIViewController {
     
     var students = [Student]()
-    @IBOutlet weak var btnLogout: UIBarButtonItem!
-    
+    // @IBOutlet weak var btnLogout: UIBarButtonItem!
     @IBOutlet weak var studentTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -22,21 +22,29 @@ class StudentController: UIViewController {
         students = DBManager.share.fetchStudent()
         //studentTableView.reloadData()
     }
-    @IBAction func onLogoutClick(_ sender: Any) {
-        UserDefaults.standard.removeObject(forKey: Keys.token)
-        UserDefaults.standard.removeObject(forKey: Keys.currentUser)
-        navigationController?.popViewController(animated: true)
+    
+    // profile
+    @IBAction func onClickProfile(_ sender: Any) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "Profile") as! ProfileViewController
+        self.navigationController?.pushViewController(vc, animated: true)
+        
     }
+    
 }
-
-
 
 
 extension StudentController: UITableViewDelegate, UITableViewDataSource, StudentCellDelegate{
     
-    func onStudentClick(student: Student) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "DetailStudent") as! DetailController
         self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    func onStudentClick(student: Student) {
+//        let vc = self.storyboard?.instantiateViewController(withIdentifier: "DetailStudent") as! DetailController
+//        self.navigationController?.pushViewController(vc, animated: true)
+        //vc.modalPresentationStyle = .fullScreen
+        //self.present(vc, animated: true)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -53,14 +61,11 @@ extension StudentController: UITableViewDelegate, UITableViewDataSource, Student
         return cell
     }
     
+    // remove student
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == UITableViewCell.EditingStyle.delete
         {
-            do{
-                try DBManager.share.context.delete(students[indexPath.row])
-               }catch{
-                print("error  in delecting")
-            }
+            DBManager.share.context.delete(students[indexPath.row])
             DBManager.share.saveContext()
             students.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .automatic)

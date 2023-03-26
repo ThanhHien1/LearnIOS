@@ -6,4 +6,10 @@
         <attribute name="school" optional="YES" attributeType="String"/>
         <attribute name="std" optional="YES" attributeType="String"/>
     </entity>
+    <entity name="Users" representedClassName="Users" syncable="YES">
+        <attribute name="email" optional="YES" attributeType="String"/>
+        <attribute name="image" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="password" optional="YES" attributeType="String"/>
+    </entity>
 </model>

@@ -9,6 +9,7 @@ import Foundation
 
 struct Keys{
     static let token = "TOKEN"
-    static let currentUser = "CURRENTUSER"
+    static let allUserInApp = "allUserInApp"
+    static let current = "current"
     
 }
